@@ -4,19 +4,21 @@
 
 ## Neuro-employee with LangChain
 
-> В первую очередь рекомендую ознакомиться с комментарием по поводу
-> создания документов и организации их структуры.
+[![ru](https://img.shields.io/badge/README_на_русском-2A2C39?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)
 
-Самой главной технологией в данном репозитории является **LangChain** - фреймворк и библиотека программных инструментов с открытым исходным кодом для создания приложений на основе больших языковых моделей (LLM). Он помогает интегрировать LLM с внешними сервисами и источниками данных, позволяя создавать сложные многошаговые рабочие процессы.
+> First of all, I recommend reading the comment about
+> creating documents and organizing their structure.
 
-Для использования этого нейро-сотрудника вам потребуется иметь свой **OpenAI API Key**. Так как я использую ключ через сервис **VseGPT**, то я добавляю в коде такую переменную:
+The main technology in this repository is **LangChain**, an open-source framework and library of software tools for creating applications based on large language models (LLM). It helps to integrate LLM with external services and data sources, allowing you to create complex multi-step workflows.
+
+ To use this neural assistant, you will need to have your **OpenAI API Key** . Since I use the key through the **VseGPT** service, I add the following variable in the code:
 
 `base_url = "https://api.vsegpt.ru/v1"`, 
 
-но если вы владеете ключом иным способом, то тогда стоит убрать эту переменную. 
+but if you have the key in a different way, you should remove this variable. 
 
-Нейросотрудник реализован по принципу работы технологии **RAG (Retrieval Augmented Generation)** — это технология, которая позволяет искать информацию во внешних базах знаний: документах, справочниках, корпоративных инструкциях. В качестве базы знаний используется созданные мной Google документ. 
+The Neuroemployee is based on the **RAG (Retrieval Augmented Generation) technology**, which allows you to search for information in external knowledge bases, such as documents, reference books, and corporate instructions. As a knowledge base, I use a Google document that I created.  
 
-Также я использую **Gradio** для описание интерфейса нейро-сотрудника. Это удобный и быстрый способ развернуть свой код в базовый интерфейс и поделиться им с друзьями с помощью временной ссылки :)
+I also use **Gradio** to describe the interface of the neuro-employee.  This is a convenient and quick way to deploy your code into a basic interface and share it with your friends using a temporary link :)
 
-> Для запуска кода рекомендую использовать графический ускоритель T4 или мощнее.
+> I recommend using a **T4** or more powerful graphics accelerator to run the code.
